@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Sleep Data Overview
+        </title>
+        <link rel="stylesheet" href="/Users/aggy/Downloads/yass/my_flask_app/static/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="/Users/aggy/Downloads/yass/my_flask_app/static/scripting.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <p1 onclick="overview()"> Your Sleep Portal </p1>
+                <button class="button-1" id="margins" onclick="temp()">
+                     <img src="/Users/aggy/Downloads/yass/my_flask_app/data/1979336-200.png" class="sigma" />
+                     <h2> Temp </h2>
+                 </button>
+                 <button class="button-1" onclick="spo02()">
+                     <img src="/Users/aggy/Downloads/yass/my_flask_app/data/oxygen-saturation-icon-vector-illustration-600nw-2291345701.webp" class="sigma" />
+                     <h2> SP02 </h2>
+                 </button>
+             <button class="button-1" onclick="hr()">
+                 <img src="/Users/aggy/Downloads/yass/my_flask_app/data/heart-rate-icon-design-free-vector Small Small.jpeg" class="sigma" />
+                 <h2> HR </h2>
+             </button>  
+            </h1>
+            <div class="buttons"> 
+                <button class="button-1" onclick="upload()">
+                      <img src="/Users/aggy/Downloads/yass/my_flask_app/data/pngtree-file-upload-icon-image_1344464.jpg" class="sigma" />
+                      <h2>Upload</h2>
+                </button>
+                <button class="button-1" onclick="past()">
+                      <img src="/Users/aggy/Downloads/yass/my_flask_app/data/90387485.png" class="sigma" />
+                      <h2> My Data</h2>
+                 `</button>
+            </div>
+        </header>
+        <main>
+            <section id="chart">
+                <canvas id="myChart"></canvas> <!-- Canvas for Chart.js -->
+            </section>
+        </main>
+    
+    </body>
+</html>
